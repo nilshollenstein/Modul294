@@ -4,14 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Greetings</title>
+    <script>
+      function getName() {
+        const input = prompt("Name?");
+
+        let hour = new Date().getHours();
+
+        let timeString = "";
+        if (hour >= 5 && hour <= 10) {
+          timeString = "Guten Morgen";
+        } else if (hour > 10 && hour <= 16) {
+          timeString = "Guten Tag";
+        } else if (hour > 16 && hour <= 22) {
+          timeString = "Guten Abend";
+        } else {
+          timeString = "Gute Nacht";
+        }
+        let baseString = `${timeString} ${input}`;
+        alert(baseString);
+      }
+      getName();
+    </script>
   </head>
-  <body>
-    <input
-      type="text"
-      id="inputFieldName"
-      placeholder="Please enter your name"
-    />
-    <button onclick="getName()">Submit</button>
-    <script src="index.js"></script>
-  </body>
+  <body></body>
 </html>
