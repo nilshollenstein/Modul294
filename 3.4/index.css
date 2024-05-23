@@ -1,0 +1,34 @@
+#rating{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 226;
+	height: 223;
+	
+}
+.star{
+	font-size: 60px;
+	cursor: pointer;
+}
+.star:hover{
+	cursor: pointer;
+}
+#slideShowImages{
+	display: flex;
+		flex-direction: row;
+		justify-content: center;
+}
+#slideShow{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	}
+#slideShow button {
+	height: 2%;
+	background-color: white;
+	border-style: none;
+}
+.hiddenImage{
+	display: none;
+}
