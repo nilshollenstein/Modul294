@@ -1,0 +1,12 @@
+input:invalid{
+	border-color: red;
+}
+input:valid{
+	border-color: green;
+}
+body {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

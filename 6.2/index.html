@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form name="passwordForm" id="passwordForm">
+      <div>
+        <label for="email">Email-Adresse</label><br />
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <div>
+        <label for="password">Passwort</label><br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          minlength="5"
+        />
+      </div>
+
+      <div>
+        <label for="passwordC">Passwortbestätigung</label><br />
+        <input
+          type="password"
+          name="passwordC"
+          id="passwordC"
+          required
+          minlength="5"
+        /><br />
+      </div>
+      <input type="checkbox" name="agbAccepted" id="agbAccepted" required />
+      <label for="agbAccepted">AGB akzeptieren</label><br />
+      <button type="submit">Registrieren</button>
+    </form>
+  </body>
+</html>
