@@ -1,0 +1,18 @@
+.person{
+	border-color: black;
+	border-width: 1px;
+	border-style:solid;
+	padding: 2%;
+	width: fit-content;
+}
+body{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#Adressform{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

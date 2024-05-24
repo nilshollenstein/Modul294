@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adressform</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <form action="" name="Adressform" id="Adressform">
+      <div class="form-part">
+        <label for="firstname">Vorname</label><br />
+        <input type="text" name="firstname" id="firstname" />
+        <br />
+        <label for="lastname">Nachname</label><br />
+        <input type="text" name="lastname" id="lastname" />
+      </div>
+      <br />
+      <div class="form-part">
+        <label for="street">Strasse</label><br />
+        <input type="text" name="street" id="street" />
+        <br />
+
+        <label for="plz">Postleitzahl</label><br />
+        <input type="text" name="plz" id="plz" /><br />
+
+        <label for="location"> Ort</label><br />
+        <input type="text" name="location" id="location" />
+      </div>
+      <br />
+      <div class="form-part">
+        <label for="email">Email-Adresse</label><br />
+        <input type="email" name="email" id="email" />
+      </div>
+      <br />
+      <div class="form-part">
+        <input type="checkbox" name="duSie" id="duSie" />
+        <label for="duSie">Du-Sie?</label>
+      </div>
+      <br />
+      <div class="form-part">
+        <label for="whereKnow">Woher kennen sie die Person?</label>
+        <select name="whereKnow" id="whereKnow">
+          <option value="Privat">Privat</option>
+          <option value="Schule">Schule</option>
+          <option value="Geschäft">Geschäft</option>
+        </select>
+      </div>
+      <br />
+      <button type="submit">Abschicken</button><br />
+      <button type="reset">Zurücksetzen</button>
+      <br />
+    </form>
+    <br />
+  </body>
+</html>
