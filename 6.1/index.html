@@ -11,33 +11,39 @@
     <form action="" name="Adressform" id="Adressform">
       <div class="form-part">
         <label for="firstname">Vorname</label><br />
-        <input type="text" name="firstname" id="firstname" />
+        <input type="text" name="firstname" id="firstname" required />
         <br />
         <label for="lastname">Nachname</label><br />
-        <input type="text" name="lastname" id="lastname" />
+        <input type="text" name="lastname" id="lastname" required />
       </div>
       <br />
       <div class="form-part">
         <label for="street">Strasse</label><br />
-        <input type="text" name="street" id="street" />
+        <input type="text" name="street" id="street" required />
         <br />
 
         <label for="plz">Postleitzahl</label><br />
-        <input type="text" name="plz" id="plz" /><br />
+        <input type="number" name="plz" id="plz" required /><br />
 
         <label for="location"> Ort</label><br />
-        <input type="text" name="location" id="location" />
+        <input type="text" name="location" id="location" required />
       </div>
       <br />
       <div class="form-part">
         <label for="email">Email-Adresse</label><br />
-        <input type="email" name="email" id="email" />
+        <input type="email" name="email" id="email" required />
+      </div>
+      <br />
+      <div class="form-part">
+        <label for="age">Alter</label>
+        <input type="number" name="age" id="age" min="0" max="150" required />
       </div>
       <br />
       <div class="form-part">
         <input type="checkbox" name="duSie" id="duSie" />
         <label for="duSie">Du-Sie?</label>
       </div>
+
       <br />
       <div class="form-part">
         <label for="whereKnow">Woher kennen sie die Person?</label>
