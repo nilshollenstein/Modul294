@@ -9,12 +9,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 async function autoFillLocation(form) {
   let zip = form.elements.zipcode.value;
-  let url = "http://localhost:5500/7.1/places.json";
+  let url = ".//places.json";
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
 
-  const response = await fetch(url);
-  const data = await response.json();
-
-  const locationData = data.find((element) => element.zipcode == zip);
-  let locationInput = form.elements.location;
-  locationInput.value = locationData.place;
+    const locationData = data.find((element) => element.zipcode == zip);
+    let locationInput = form.elements.location;
+    if (locationData.place) {
+      locationInput.value = locationData.place;
+    }
+  } catch (error) {
+    console.log(error);
+  }
 }
