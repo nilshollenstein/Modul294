@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 async function autoFillLocation(form) {
   let zip = form.elements.zipcode.value;
-  let url = ".//places.json";
+  let url = "./places.json";
   try {
     const response = await fetch(url);
     const data = await response.json();
