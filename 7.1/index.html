@@ -2,32 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Formular mit Assistenzfunktion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weatherzip</title>
     <script src="./script.js"></script>
   </head>
   <body>
-    <form name="AdressAutoComplete">
-      <label for="firstname">Vorname</label><br />
-      <input type="text" name="firstname" id="firstname" required />
-      <br />
-      <label for="lastname">Nachname</label><br />
-      <input type="text" name="lastname" id="lastname" required />
-      <br />
-
-      <label for="street">Strasse</label><br />
-      <input type="text" name="street" id="street" required />
-      <br />
-
+    <form action="" name="weatherzip">
       <label for="zipcode">Postleitzahl</label><br />
-      <input type="number" name="zipcode" id="zipcode" required />
+      <input
+        type="number"
+        name="zipcode"
+        id="zipcode"
+        required
+        pattern="[0-9]{4}"
+      />
       <br />
-
-      <label for="location">Ort</label><br />
-      <input type="text" name="location" id="location" required />
-      <br />
-
       <button type="submit">Senden</button>
     </form>
-    <div id="output"></div>
+    <div>
+      <p id="showTemperature"></p>
+    </div>
   </body>
 </html>
